@@ -15,7 +15,7 @@ namespace ParticipationMicroservice.Model
 
         [ForeignKey("EventId")]
         public int EventId { get; set; }
-        public virtual Event Events{ get; set; }
+        public virtual Event Events { get; set; }
 
         //Commented due to transitive dependancy
         //[ForeignKey("Sport")]

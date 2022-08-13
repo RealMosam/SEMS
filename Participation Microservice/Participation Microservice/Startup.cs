@@ -219,6 +219,34 @@ namespace ParticipationMicroservice
                 Gender = GenderLevel.Male
             };
 
+            Player p2 = new Player()
+            {
+                PlayerId = 2,
+                SportId = 2,
+                Sports = s2,
+                PlayerName = "Neymar",
+                Age = 33,
+                ContactNumber = "9999999980",
+                Email = "neymar@gmail.com",
+                Gender = GenderLevel.Male
+            };
+
+            Player p3 = new Player()
+            {
+                PlayerId = 3,
+                SportId = 2,
+                Sports = s2,
+                PlayerName = "Messi",
+                Age = 36,
+                ContactNumber = "9999999960",
+                Email = "messi@gmail.com",
+                Gender = GenderLevel.Male
+            };
+
+            context.Players.Add(p1);
+            context.Players.Add(p2);
+            context.Players.Add(p3);
+
             Participation ptn1 = new Participation()
             {
                 ParticipationId = 1,

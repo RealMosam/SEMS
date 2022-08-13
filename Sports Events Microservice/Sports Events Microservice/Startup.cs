@@ -133,9 +133,50 @@ namespace SportsEventsMicroService
             var context = scope.ServiceProvider.GetService<DatabaseContext>();
             SeedData(context);
         }
-        // Add 	Sport Type
         public static void SeedData(DatabaseContext context)
         {
+            Event e1 = new Event()
+            {
+                EventId = 1,
+                SportId = 1,
+                EventName = "IPL",
+                Date = DateTime.Now,
+                NoOfSlots = 30
+            };
+            context.Events.Add(e1);
+
+            Event e2 = new Event()
+            {
+                EventId = 2,
+                SportId = 2,
+                EventName = "FIFA",
+                Date = DateTime.Now,
+                NoOfSlots = 30
+            };
+            context.Events.Add(e2);
+
+            Event e3 = new Event()
+            {
+                EventId = 3,
+                SportId = 6,
+                EventName = "Worldcup",
+                Date = DateTime.Now,
+                NoOfSlots = 100
+            };
+            context.Events.Add(e3);
+
+            Event e4 = new Event()
+            {
+                EventId = 4,
+                SportId = 5,
+                EventName = "Championship",
+                Date = DateTime.Now,
+                NoOfSlots = 20
+            };
+            context.Events.Add(e4);
+
+            context.SaveChanges();
+
             Sport s1 = new Sport()
             {
                 SportId = 1,
@@ -143,6 +184,7 @@ namespace SportsEventsMicroService
                 NoOfPlayers = 30,
                 SportType = "Outdoor"
             };
+            context.Sports.Add(s1);
 
             Sport s2 = new Sport()
             {
@@ -151,6 +193,7 @@ namespace SportsEventsMicroService
                 NoOfPlayers = 20,
                 SportType = "Outdoor"
             };
+            context.Sports.Add(s2);
 
             Sport s3 = new Sport()
             {
@@ -159,6 +202,7 @@ namespace SportsEventsMicroService
                 NoOfPlayers = 22,
                 SportType = "Outdoor"
             };
+            context.Sports.Add(s3);
 
             Sport s4 = new Sport()
             {
@@ -167,6 +211,7 @@ namespace SportsEventsMicroService
                 NoOfPlayers = 2,
                 SportType = "Indoor"
             };
+            context.Sports.Add(s4);
 
             Sport s5 = new Sport()
             {
@@ -175,6 +220,7 @@ namespace SportsEventsMicroService
                 NoOfPlayers = 4,
                 SportType = "Indoor"
             };
+            context.Sports.Add(s5);
 
             Sport s6 = new Sport()
             {
@@ -183,56 +229,7 @@ namespace SportsEventsMicroService
                 NoOfPlayers = 22,
                 SportType = "Outdoor"
             };
-
-            context.Sports.Add(s1);
-            context.Sports.Add(s2);
-            context.Sports.Add(s3);
-            context.Sports.Add(s4);
-            context.Sports.Add(s5);
             context.Sports.Add(s6);
-
-            context.SaveChanges();
-
-            Event e1 = new Event()
-            {
-                EventId = 1,
-                SportId = s1.SportId,
-                EventName = "IPL",
-                Date = DateTime.Now,
-                NoOfSlots = 30
-            };
-
-            Event e2 = new Event()
-            {
-                EventId = 2,
-                SportId = s2.SportId,
-                EventName = "FIFA",
-                Date = DateTime.Now,
-                NoOfSlots = 30
-            };
-
-            Event e3 = new Event()
-            {
-                EventId = 3,
-                SportId = s6.SportId,
-                EventName = "Worldcup",
-                Date = DateTime.Now,
-                NoOfSlots = 100
-            };
-
-            Event e4 = new Event()
-            {
-                EventId = 4,
-                SportId = s5.SportId,
-                EventName = "Championship",
-                Date = DateTime.Now,
-                NoOfSlots = 20
-            };
-
-            context.Events.Add(e1);
-            context.Events.Add(e2);
-            context.Events.Add(e3);
-            context.Events.Add(e4);
 
             context.SaveChanges();
 

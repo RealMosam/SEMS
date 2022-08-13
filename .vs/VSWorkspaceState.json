@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Participation Microservice\\Participation Microservice"
+    "\\Participation Microservice\\Participation Microservice",
+    "\\Sports Events Microservice",
+    "\\Sports Events Microservice\\Sports Events Microservice"
   ],
-  "SelectedNode": "\\Participation Microservice",
+  "SelectedNode": "\\Sports Events Microservice\\Sports Events Microservice\\Startup.cs",
   "PreviewInSolutionExplorer": false
 }

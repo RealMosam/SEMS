@@ -8,16 +8,13 @@ using PlayersMicroService.Database;
 namespace PlayerMicroservice.Database
 {
     public class DatabaseContext : DbContext
-    {
-         
-        public DbSet<Player> Players { get; set; }
-        public DbSet<Sport> Sports { get; set; }
-       
-
+    { 
         public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
         {
 
         }
+        public DbSet<Player> Players { get; set; }
+        public DbSet<Sport> Sports { get; set; }
     }
 
 }

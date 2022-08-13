@@ -12,10 +12,13 @@ C:\Users\Mosam\Desktop\SEMS\Sports Events Microservice\Sports Events Microservic
 C:\Users\Mosam\Desktop\SEMS\Sports Events Microservice\Sports Events Microservice\bin\Debug\net6.0\Sports Events Microservice.runtimeconfig.json
 C:\Users\Mosam\Desktop\SEMS\Sports Events Microservice\Sports Events Microservice\bin\Debug\net6.0\Sports Events Microservice.dll
 C:\Users\Mosam\Desktop\SEMS\Sports Events Microservice\Sports Events Microservice\bin\Debug\net6.0\Sports Events Microservice.pdb
+C:\Users\Mosam\Desktop\SEMS\Sports Events Microservice\Sports Events Microservice\bin\Debug\net6.0\Humanizer.dll
 C:\Users\Mosam\Desktop\SEMS\Sports Events Microservice\Sports Events Microservice\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Mosam\Desktop\SEMS\Sports Events Microservice\Sports Events Microservice\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\Mosam\Desktop\SEMS\Sports Events Microservice\Sports Events Microservice\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Mosam\Desktop\SEMS\Sports Events Microservice\Sports Events Microservice\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Mosam\Desktop\SEMS\Sports Events Microservice\Sports Events Microservice\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Mosam\Desktop\SEMS\Sports Events Microservice\Sports Events Microservice\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Mosam\Desktop\SEMS\Sports Events Microservice\Sports Events Microservice\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\Mosam\Desktop\SEMS\Sports Events Microservice\Sports Events Microservice\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\Mosam\Desktop\SEMS\Sports Events Microservice\Sports Events Microservice\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
@@ -37,6 +40,3 @@ C:\Users\Mosam\Desktop\SEMS\Sports Events Microservice\Sports Events Microservic
 C:\Users\Mosam\Desktop\SEMS\Sports Events Microservice\Sports Events Microservice\obj\Debug\net6.0\Sports Events Microservice.pdb
 C:\Users\Mosam\Desktop\SEMS\Sports Events Microservice\Sports Events Microservice\obj\Debug\net6.0\Sports Events Microservice.genruntimeconfig.cache
 C:\Users\Mosam\Desktop\SEMS\Sports Events Microservice\Sports Events Microservice\obj\Debug\net6.0\ref\Sports Events Microservice.dll
-C:\Users\Mosam\Desktop\SEMS\Sports Events Microservice\Sports Events Microservice\bin\Debug\net6.0\Humanizer.dll
-C:\Users\Mosam\Desktop\SEMS\Sports Events Microservice\Sports Events Microservice\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\Mosam\Desktop\SEMS\Sports Events Microservice\Sports Events Microservice\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll

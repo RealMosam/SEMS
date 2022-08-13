@@ -11,11 +11,11 @@ namespace SportsEventsMicroService.Database
         
         public int EventId { get; set; }
         [Required(ErrorMessage ="Required !")]
-        
+
         [ForeignKey("SportId")]
         public int SportId { get; set; }
         public virtual Sport Sport { get; set; }
-        [Required(ErrorMessage = "Required !")] 
+        [Required(ErrorMessage = "Required !")]
         public string EventName { get; set; }
         [Required(ErrorMessage = "Required !")]
         public int NoOfSlots { get; set; }
