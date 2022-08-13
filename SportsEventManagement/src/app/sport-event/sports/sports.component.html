@@ -1,0 +1,43 @@
+<html>
+<head>
+  <title>Sports List</title>
+</head>
+<br/>
+<body>
+  <div class="container" style="padding:10px;">
+  
+  <div class="row">
+    <div class="col-12" style="font-size: 1.2em;">
+      Enter a SportName: <input type="text" id="sportName" #sportName class="form-control" autocomplete="off" required>
+      <button class="btn btn-info my-2" type="submit" (click)="getSportByName(sportName.value)">Sport By Name</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="list-group-item">
+        <div>
+          <table class="table" style="font-size:1.2em;">
+            <tr style="background-image: linear-gradient(gray,lightblue);">
+              <th>Sports Id</th>
+              <th>Sports Name</th>
+              <th>No of Players</th>
+              <th>Sports Type</th>
+            </tr>
+            <tr *ngFor="let s of sports">
+              <td>{{s.sportId}}</td>
+              <td>{{s.sportName}}</td>
+              <td>{{s.noOfPlayers}}</td>
+              <td>{{s.sportType}}</td>
+            </tr>
+          </table>
+          <!-- <h4 class="d-inline list-group-item-heading">Sports Id: {{s.sportId}}</h4><br />
+          <h4 class="list-group-item-text">Sports Name: {{s.sportName}}</h4>
+          <p class="list-group-item-heading">Number of players: {{s.noOfPlayers}}</p>
+          <p class="list-group-item-text">Sports Type: {{s.sportType}}</p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

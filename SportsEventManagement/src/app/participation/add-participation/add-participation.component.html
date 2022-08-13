@@ -1,0 +1,225 @@
+<br />
+<h2 class="list-group-item text-center">----- Add New Participant -----</h2>
+<br />
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <form  #participantData="ngForm" autocomplete="off" (ngSubmit)="onSubmitParticipant(participantData)">
+        
+
+        <!-- <h4 class="list-group-item col-9"> Player Details </h4><br />
+
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Player ID</span>
+          </div>
+          <input type="number" class="form-control" placeholder="Enter Player ID" 
+            id="playerId" #playerName="ngModel" [(ngModel)]="participantModel.playerId"  required />
+        </div>
+        <br /> -->
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Player Name</span>
+          </div>
+          <input name="playerName" type="text" class="form-control" placeholder="Enter Player Name" 
+            id="playerName" #playerName="ngModel" 
+             [(ngModel)]="participantModel.player[0].playerName" required/>
+             &nbsp; &nbsp; &nbsp;
+      <div style="color:red;" *ngIf="!playerName?.valid && (playerName?.dirty || playerName?.touched)">
+        Invalid Player Name
+     </div>
+        </div>
+        <br />
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Player Age</span>
+          </div>
+          <input name="Age" type="number" class="form-control" placeholder="Enter Player Age" 
+            id="age" #age="ngModel" [(ngModel)]="participantModel.player[0].age" 
+            min="10" max="60" required/>
+            &nbsp; &nbsp; &nbsp;
+      <div style="color:red;" *ngIf="!age?.valid && (age?.dirty || age?.touched)">
+        Invalid Age. Age between 10 and 60.
+     </div>
+        </div>
+        <br />
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Phone Number</span>
+          </div>
+          <input name="contactNumber" type="number" class="form-control" placeholder="Enter Player Mobile Number" 
+            id="contactNumber" #contactNumber="ngModel" 
+             [(ngModel)]="participantModel.player[0].contactNumber" required/>
+             &nbsp; &nbsp; &nbsp;
+      <div style="color:red;" *ngIf="!contactNumber?.valid && (contactNumber?.dirty || contactNumber?.touched)">
+        Invalid Contact Number
+     </div>
+        </div>
+        <br />
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Email</span>
+          </div>
+          <input name="Email" type="email" class="form-control" placeholder="Enter Player Email" 
+            id="email" #email="ngModel" email [(ngModel)]="participantModel.player[0].email" required/>
+            &nbsp; &nbsp; &nbsp;
+      <div style="color:red;" *ngIf="!email?.valid && (email?.dirty || email?.touched)">
+        Invalid Email
+     </div>
+        </div>
+        <br />
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> Gender </span>
+          </div>
+          <!-- <input name="Gender" type="number" min="1" max="2" class="form-control" placeholder="Enter Player Gender" 
+            id="gender" #gender="ngModel" [(ngModel)]="participantModel.player[0].gender" required/> -->
+            <select value="Choose gender" class="form-select" aria-label="Default select example" name="gender" 
+      id="gender" #gender="ngModel" [(ngModel)]="participantModel.player[0].gender" placeholder="Select the gender" required>
+      <option value="1">Male</option>
+      <option value="2">Female</option>
+      </select>
+      &nbsp; &nbsp; &nbsp;
+      <div style="color:red;" *ngIf="!gender?.valid && (gender?.dirty || gender?.touched)">
+        Invalid Gender Type
+     </div>
+        </div>
+        <br />
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Sports Name</span>
+          </div>
+          <select value="Choose a sportname" class="form-select" aria-label="Default select example" name="sportName" 
+            id="sportName" #sportName="ngModel" [(ngModel)]="participantModel.events.sports.sportName" placeholder="Select the sport" required>
+            <option value="Cricket">Cricket</option>
+            <option value="Hockey">Hockey</option>
+            <option value="Chess">Chess</option>
+            <option value="Football">Football</option>
+            <option value="Badminton">Badminton</option>
+            <option value="Carroms">Carroms</option>
+          </select>
+             &nbsp; &nbsp; &nbsp;
+      <div style="color:red;" *ngIf="!sportName?.valid && (sportName?.dirty || sportName?.touched)">
+        Invalid Sport Name
+     </div>
+        </div>
+        <br />
+      <!-- </form>
+    </div> -->
+
+    
+
+    <!-- <div class="col-6">
+      <form>
+
+        <h4 class="list-group-item col-9"> Event Details </h4><br />
+
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Event ID</span>
+          </div>
+          <input type="number" class="form-control" placeholder="Enter Event ID" 
+          id="eventId" #eventId="ngModel" [(ngModel)]="participantModel.eventId" required />
+        </div>
+        <br /> -->
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Event Name</span>
+          </div>
+          <!-- <input type="text" name="EventName" class="form-control" placeholder="Enter Event Name" 
+            id="eventName" #eventName="ngModel" [(ngModel)]="participantModel.events.eventName" required /> -->
+            <select value="Choose a eventname" class="form-select" aria-label="Default select example" name="eventName" 
+              id="eventName" #eventName="ngModel" [(ngModel)]="participantModel.events.eventName" placeholder="Select the event" required>
+              <option value="IPL">IPL</option>
+              <option value="FIFA">FIFA</option>
+              <option value="Worldcup">Worldcup</option>
+              <option value="Championship">Championship</option>
+            </select>
+            &nbsp; &nbsp; &nbsp;
+      <div style="color:red;" *ngIf="!eventName?.valid && (eventName?.dirty || eventName?.touched)">
+        Invalid Event Name
+     </div>
+        </div>
+        <br />
+        <!-- <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">No Of Slots</span>
+          </div>
+          <input type="number" name="NoOfSlots" class="form-control" placeholder="Enter Number of Slots" 
+            id="noOfSlots" #noOfSlots="ngModel" [(ngModel)]="participantModel.noOfSlots" required />
+        </div>
+        <br />
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Event Date</span>
+          </div>
+          <input type="date" name="Date" class="form-control" placeholder="Enter Event Date" 
+            id="date" #date="ngModel" [(ngModel)]="participantModel.date" required />
+        </div>
+        <br />
+
+        <h4 class="list-group-item col-9"> Sports Details </h4><br />
+
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Sports Id</span>
+          </div>
+          <input type="number" name="SportId" class="form-control" placeholder="Enter Sports ID" 
+            id="sportId" #sportId="ngModel" [(ngModel)]="participantModel.sportId" required />
+        </div>
+        <br /> -->
+        <!-- <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Sports Name</span>
+          </div>
+          <input type="text" ngModel class="form-control" placeholder="Enter Player Sport Name" />
+        </div>
+        <br /> -->
+        <!-- <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Sports Type</span>
+          </div>
+          <input name="SportType" type="text" class="form-control" placeholder="Enter Sport Type" 
+            id="sportType" #sportType="ngModel" [(ngModel)]="participantModel.sportType" required/>
+        </div>
+        <br />
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">No of Players</span>
+          </div>
+          <input name="NoOfPlayers" type="number" class="form-control" placeholder="Enter Number of Players" 
+            id="noOfPlayers" #noOfPlayers="ngModel" [(ngModel)]="participantModel.noOfPlayers" required/>
+        </div>
+        <br /> -->
+
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> Status </span>
+          </div>
+          <!-- <input name="status" type="number" min="1" max="3" class="form-control" placeholder="Enter the status" 
+            id="status" #status="ngModel" [(ngModel)]="participantModel.status" required/> -->
+            <select value="Choose status" class="form-select" aria-label="Default select example" name="status" 
+      id="status" #status="ngModel" 
+       [(ngModel)]="participantModel.status" placeholder="Select the status" required>
+      <option value=1>Pending</option>
+      <option value=2>Approved</option>
+      <option value=3>Declined</option>
+      </select>
+            &nbsp; &nbsp; &nbsp;
+      <div style="color:red;" *ngIf="!status?.valid && (status?.dirty || status?.touched)">
+        Invalid Status
+     </div>
+        </div>
+        <br />
+        
+
+
+        <button type="submit" [disabled]="participantData.invalid" class="btn btn-success"> Submit </button>
+        <br />
+        <br />
+      </form>
+    </div>
+  </div>
+  </div>
+
+<!--<p class="list-group-item">Participant Added Successfully!!!</p>-->

@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title>Sports Event Management</title>
+</head>
+
+<body >
+<!--<body>-->
+  <nav class="navbar navbar-dark container-fluid" >
+    <a href="/home" class="col-10 navbar-brand text-white"><b>SPORTS EVENT MANAGEMENT SYSTEM</b></a>
+    <a type="button" *ngIf="!service.status()" href="/login" class="navbar-brand text-white"><h5>Sign In</h5></a>
+    <a type="button" *ngIf="!service.status()" href="/SignUp" class="navbar-brand text-white"><h5>Sign Up</h5></a>
+    <button *ngIf="service.status()" class="btn btn-danger my-2 my-sm-0" (click)="onLogout()">Logout</button>
+</nav>
+    <router-outlet></router-outlet>
+</body>
+</html>

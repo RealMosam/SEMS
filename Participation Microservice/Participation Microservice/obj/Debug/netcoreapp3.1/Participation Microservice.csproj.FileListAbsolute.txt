@@ -1,0 +1,7 @@
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\obj\Debug\netcoreapp3.1\Participation Microservice.csproj.AssemblyReference.cache
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\obj\Debug\netcoreapp3.1\Participation Microservice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\obj\Debug\netcoreapp3.1\Participation Microservice.AssemblyInfoInputs.cache
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\obj\Debug\netcoreapp3.1\Participation Microservice.AssemblyInfo.cs
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\obj\Debug\netcoreapp3.1\Participation Microservice.csproj.CoreCompileInputs.cache
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\obj\Debug\netcoreapp3.1\Participation Microservice.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\obj\Debug\netcoreapp3.1\Participation Microservice.MvcApplicationPartsAssemblyInfo.cache

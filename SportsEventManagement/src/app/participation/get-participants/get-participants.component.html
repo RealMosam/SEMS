@@ -1,0 +1,80 @@
+<html>
+<head>
+  <title>Participations</title>
+</head>
+<br />
+<body>
+  <div class="container" style="padding:10px;">
+  <div class="row">
+    <div class="col-12">
+      <h3 class="col-10">If you want to add new participant, Click here -> <a routerLink="/home/add-participation"><i class="fas fa-edit"></i></a></h3>
+    </div>
+  </div>
+  <br />
+  <hr />
+  <div class="row">
+    <div class="col-12">
+      <h4>If you want to update existing Participation ID status, Click here -> <a routerLink="/home/update-status"><i class="fas fa-edit"></i></a></h4>
+    </div>
+  </div>
+  <br /><hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <h4> Get Participants by Status </h4>
+      </div>
+      <div class="col-9">
+        <button class="m-3 col-3 btn btn-warning" (click)="getPendingParticipants('pending')">Pending</button>
+        <button class="m-3 col-3 btn btn-success" (click)="getApprovedParticipants('approved')">Approved</button>
+        <button class="m-3 col-3 btn btn-danger" (click)="getDeclinedParticipants('declined')">Declined</button>
+      </div>
+    </div>
+  </div>
+  <br/>
+  
+
+
+  <div class="row">
+    <div class="col-12">
+      <div  class="list-group-item">
+        <table class="table bg-success">
+          <tr style="background-image: linear-gradient(lightblue,lavender); ">
+            <th>Participation Id</th>
+            <th>Player Id</th>
+            <th>Player Name</th>
+            <th>Event Id</th>
+            <th>Event Name</th>
+            <th>Sports Id</th>
+            <th>Sports Name</th>
+            <th>Status</th>
+          </tr>
+          <tr *ngFor="let p of participations">
+            <td>{{p.participationId}}</td>
+            <td>{{p.player[0].playerId}}</td>
+            <td>{{p.player[0].playerName}}</td>
+            <td>{{p.eventId}}</td>
+            <td>{{p.events.eventName}}</td>
+            <td>{{p.events.sportId}}</td>
+            <td>{{p.events.sports.sportName}}</td>
+            <td *ngIf="p.status == 1">Pending</td>
+            <td *ngIf="p.status == 2">Approved</td>
+            <td *ngIf="p.status == 3">Declined</td>
+          </tr>
+        </table>
+          <!-- <h4 class="d-inline list-group-item-heading">Participation ID: {{p.participationId}} </h4>
+          <h4 class="list-group-item-heading">Player Id: {{p.player[0].playerId}}</h4><br />
+          <p class="list-group-item-text">Player Name: {{p.player[0].playerName}}</p>
+          <p class="list-group-item-text">Event Id: {{p.eventId}}</p>
+          <p class="list-group-item-text">Event Name: {{p.events.eventName}}</p>
+          <p class="list-group-item-text">Sports Id: {{p.events.sportId}}</p>
+          <p class="list-group-item-text">Sports Name: {{p.events.sports.sportName}}</p>
+          <p *ngIf="p.status == 1" class="list-group-item-text">Status: Pending</p>
+          <p *ngIf="p.status == 2" class="list-group-item-text">Status: Approved</p>
+          <p *ngIf="p.status == 3" class="list-group-item-text">Status: Declined</p> -->
+      </div>
+    </div>
+  </div>
+  <hr />
+</div>
+</body>
+</html>

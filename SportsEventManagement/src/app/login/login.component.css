@@ -1,0 +1,16 @@
+.bg{
+
+    background-image: url('https://wallpaper.dog/large/5550448.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    height: 100%;
+    margin: 0;
+    padding-bottom: 455px;
+
+}
+h2{
+    font-weight: bold;
+    
+}

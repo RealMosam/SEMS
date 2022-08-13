@@ -1,0 +1,65 @@
+<br />
+<h2 class="list-group-item text-center">----- Add New Event -----</h2>
+<br />
+<form class="col-5" #eventData="ngForm" autocomplete="off" (ngSubmit)="onSubmitEvent(eventData)">
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Event Name</span>
+    </div>
+    <input type="text" name="EventName" class="form-control" placeholder="Enter Event Name" 
+      id="eventName" #eventName="ngModel" [(ngModel)]="eventModel.eventName" required />
+      &nbsp; &nbsp; &nbsp;
+      <div style="color:red;" *ngIf="!eventName?.valid && (eventName?.dirty || eventName?.touched)">
+        Invalid Event Name
+     </div>
+  </div>
+  <br />
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">No Of Slots</span>
+    </div>
+    <input type="number" name="NoOfSlots" class="form-control" placeholder="Enter Number of Slots" 
+      id="noOfSlots" #noOfSlots="ngModel" [(ngModel)]="eventModel.noOfSlots" required />
+      &nbsp; &nbsp; &nbsp;
+      <div style="color:red;" *ngIf="!noOfSlots?.valid && (noOfSlots?.dirty || noOfSlots?.touched)">
+        Invalid number of Slots
+     </div>
+  </div>
+  <br />
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Event Date</span>
+    </div>
+    <input type="date" name="Date" class="form-control" placeholder="Enter Event Date" 
+      id="date" #date="ngModel" [(ngModel)]="eventModel.date" required />
+      &nbsp; &nbsp; &nbsp;
+      <div style="color:red;" *ngIf="!date?.valid && (date?.dirty || date?.touched)">
+        Invalid Date
+     </div>
+  </div>
+  <br />
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Sports Name</span>
+    </div>
+    <select value="Choose a sportname" class="form-select" aria-label="Default select example" name="sportName" 
+    id="sportName" #sportName="ngModel" [(ngModel)]="eventModel.sport.sportName" placeholder="Select the sport" required>
+      <option value="Cricket">Cricket</option>
+      <option value="Hockey">Hockey</option>
+      <option value="Chess">Chess</option>
+      <option value="Football">Football</option>
+      <option value="Badminton">Badminton</option>
+      <option value="Carroms">Carroms</option>
+    </select>
+      &nbsp; &nbsp; &nbsp;
+      <div style="color:red;" *ngIf="!sportName?.valid && (sportName?.dirty || sportName?.touched)">
+        Invalid Sport Name
+     </div>
+  </div>
+  <br />
+  <button type="submit" onSubmit="eventData.reset()" [disabled]="eventData.invalid" class="btn btn-success"> Submit </button>
+  <br />
+  <br />
+</form>
+
+<!--<p class="list-group-item">Event Added Successfully!!!</p>-->

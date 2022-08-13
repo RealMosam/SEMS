@@ -1,0 +1,28 @@
+<br>
+<div class="row">
+    <div class="col-12">
+        <div class="list-group-item">
+          <table class="table" style="font-size:1.2em;">
+            <tr style="background-image: linear-gradient(lightpink,cornflowerblue);">
+              <th>Event Id</th>
+              <th>Event Name</th>
+              <th>Event Date</th>
+              <th>No Of Slots</th>
+              <th>Sport Type</th>
+            </tr>
+            <tr>
+              <td>{{service.event.eventId}}</td>
+              <td>{{service.event.eventName}}</td>
+              <td>{{service.event.date|date}}</td>
+              <td>{{service.event.noOfSlots}}</td>
+              <td>{{service.event.sport.sportName}}</td>
+            </tr>
+          </table>
+          <!-- <h4 class="d-inline list-group-item-heading">Event Id: {{service.event.eventId}}</h4><br />
+          <h4 class="list-group-item-text">Event Name: {{service.event.eventName}}</h4>
+          <h5 class="list-group-item-heading">Event Date: {{service.event.date|date}}</h5>
+          <p class="list-group-item-text">No Of Slots: {{service.event.noOfSlots}}</p>
+          <p class="list-group-item-text">Sports Name: {{service.event.sport.sportName}}</p> -->
+        </div>
+    </div>
+</div>

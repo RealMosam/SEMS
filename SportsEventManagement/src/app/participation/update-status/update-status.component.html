@@ -1,0 +1,41 @@
+<br />
+<h2 class="list-group-item text-center">----- Update Status -----</h2>
+<br />
+<form>
+  <div class="container">
+    <div class="row">
+      <div class="col-5 pull-left">
+      <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Participation ID</span>
+          </div>
+          <input type="number" #pid class="form-control" placeholder="Enter Participation ID" 
+          name="pid" id="pid" required />
+        </div>
+      </div>
+      <br />
+      <div class="col-5 pull-right offset-2">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Status  </span>
+          </div>
+          <!-- <input type="text" #status  class="form-control" placeholder="Enter Status " /> -->
+          <select value="Choose Status" class="form-select" aria-label="Default select example" name="status" 
+      id="status" #status="ngModel" [(ngModel)]="stats.status" placeholder="Select the Status" required>
+      <option value="approved">Approved</option>
+      <option value="declined">Declined</option>
+      </select>
+      &nbsp; &nbsp; &nbsp;
+      <div style="color:red;" *ngIf="!status?.valid && (status?.dirty || status?.touched)">
+        Invalid Status
+     </div>
+        </div>
+      </div>
+      <br />
+    </div>
+    <br />
+    <button type="submit" (click)="updateStatus(pid.value,status.value)" class="btn btn-warning"> Update </button> 
+    <br />
+    <br />
+  </div>
+</form>

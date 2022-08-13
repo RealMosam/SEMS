@@ -1,0 +1,111 @@
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #0970ef;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 4px;
+  
+}
+li {
+    padding: 6px 0;
+    display: inline-block;
+    margin: 0 15px;
+    
+  }
+  #playercolor:hover {
+    background-size: 100%;
+  }
+  #sportcolor:hover {
+    background-size: 100%;
+  }
+  #eventcolor:hover {
+    background-size: 100%;
+  }
+  #participationcolor:hover {
+    background-size: 100%;
+  }
+
+#playercolor{
+    --fill-color: navy; 
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    font: 700 2.5rem Raleway, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px var(--fill-color);
+    background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+    color: transparent;
+    background-clip: text;
+    transition: 0.5s linear;
+    
+  }
+  #sportcolor{
+    --fill-color:#e61919;
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    font: 700 2.5rem Raleway, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px var(--fill-color);
+    background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+    color: transparent;
+    background-clip: text;
+    transition: 0.5s linear;
+  }
+  #eventcolor{
+    --fill-color:black;
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    font: 700 2.5rem Raleway, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px var(--fill-color);
+    background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+    color: transparent;
+    background-clip: text;
+    transition: 0.5s linear;
+  }
+  #participationcolor{
+    --fill-color:darkgreen;
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    font: 700 2.5rem Raleway, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px var(--fill-color);
+    background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+    color:transparent;
+    background-clip: text;
+    transition: 0.5s linear;
+  }
+  .bg{
+
+    background-image: linear-gradient(lightsteelblue,white);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    height: 100%;
+    margin: 0;
+    padding-bottom: 455px;
+    
+    
+
+}

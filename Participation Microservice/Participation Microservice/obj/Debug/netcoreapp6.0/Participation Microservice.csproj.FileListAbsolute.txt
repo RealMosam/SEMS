@@ -1,0 +1,39 @@
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\bin\Debug\netcoreapp6.0\appsettings.Development.json
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\bin\Debug\netcoreapp6.0\appsettings.json
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\bin\Debug\netcoreapp6.0\Participation Microservice.exe
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\bin\Debug\netcoreapp6.0\Participation Microservice.deps.json
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\bin\Debug\netcoreapp6.0\Participation Microservice.runtimeconfig.json
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\bin\Debug\netcoreapp6.0\Participation Microservice.dll
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\bin\Debug\netcoreapp6.0\Participation Microservice.pdb
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\bin\Debug\netcoreapp6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\bin\Debug\netcoreapp6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\bin\Debug\netcoreapp6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\bin\Debug\netcoreapp6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\bin\Debug\netcoreapp6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\bin\Debug\netcoreapp6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\bin\Debug\netcoreapp6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\bin\Debug\netcoreapp6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\bin\Debug\netcoreapp6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\bin\Debug\netcoreapp6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\bin\Debug\netcoreapp6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\bin\Debug\netcoreapp6.0\Microsoft.OpenApi.dll
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\bin\Debug\netcoreapp6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\bin\Debug\netcoreapp6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\bin\Debug\netcoreapp6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\bin\Debug\netcoreapp6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\obj\Debug\netcoreapp6.0\Participation Microservice.csproj.AssemblyReference.cache
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\obj\Debug\netcoreapp6.0\Participation Microservice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\obj\Debug\netcoreapp6.0\Participation Microservice.AssemblyInfoInputs.cache
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\obj\Debug\netcoreapp6.0\Participation Microservice.AssemblyInfo.cs
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\obj\Debug\netcoreapp6.0\Participation Microservice.csproj.CoreCompileInputs.cache
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\obj\Debug\netcoreapp6.0\Participation Microservice.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\obj\Debug\netcoreapp6.0\Participation Microservice.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\obj\Debug\netcoreapp6.0\staticwebassets.build.json
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\obj\Debug\netcoreapp6.0\staticwebassets.development.json
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\obj\Debug\netcoreapp6.0\scopedcss\bundle\Participation Microservice.styles.css
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\obj\Debug\netcoreapp6.0\Participation Microservice.csproj.CopyComplete
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\obj\Debug\netcoreapp6.0\Participation Microservice.dll
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\obj\Debug\netcoreapp6.0\refint\Participation Microservice.dll
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\obj\Debug\netcoreapp6.0\Participation Microservice.pdb
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\obj\Debug\netcoreapp6.0\Participation Microservice.genruntimeconfig.cache
+C:\Users\Mosam\Desktop\SEMS\Participation Microservice\Participation Microservice\obj\Debug\netcoreapp6.0\ref\Participation Microservice.dll

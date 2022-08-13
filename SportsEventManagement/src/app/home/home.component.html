@@ -1,0 +1,27 @@
+<div class="bg">
+<br>
+<link rel="stylesheet" href="home.component.css">
+<div class="container" >
+    <div *ngIf="service.status()" class="row justify-content-between">      
+      <div class="navbar-nav" style="justify-content: center; align-items: center; ">
+        <ul >
+         <li style="background-image:linear-gradient(pink,lightblue)">
+           <a routerLink="/home/players" id="playercolor" style="box-shadow: 10px 10px 10px #888888; padding:10px;">Player</a>
+         </li>
+         <li style="background-image:linear-gradient(pink,lightblue)">
+           <a routerLink="/home/sports" id="sportcolor" style="box-shadow: 10px 10px 10px #888888; padding:10px;">Sport</a>
+         </li>
+         <li style="background-image:linear-gradient(pink,lightblue)">
+           <a routerLink="/home/events" id="eventcolor" style="box-shadow: 10px 10px 10px #888888; padding:10px;">Event</a>
+         </li>
+         <li style="background-image:linear-gradient(pink,lightblue)"><a routerLink="/home/get-participants" id="participationcolor" style="box-shadow: 10px 10px 10px #888888; padding:10px;">Participation</a></li>
+        </ul>
+       </div>
+      <div style="margin-top: 10px;"><router-outlet></router-outlet></div>
+      <!--<app-participation></app-participation>-->
+      <!--<app-player></app-player>-->
+      <!--<app-sport-event></app-sport-event>-->
+    </div>
+</div>
+
+</div>
